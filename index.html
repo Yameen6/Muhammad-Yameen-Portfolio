@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Yameen | Portfolio</title>
+    <style>
+        /* CSS STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background: #800000; /* UET Maroon */
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Gold hover */
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: auto;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            color: #800000;
+            margin-bottom: 20px;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(128, 0, 0, 0.8), rgba(128, 0, 0, 0.8)), url('https://via.placeholder.com/1500');
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        /* Skills List */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: #800000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #800000;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        button:hover {
+            background: #a00000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">MY. Portfolio</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <header id="home">
+        <h1>Muhammad Yameen</h1>
+        <p>Computer Science Student at UET Lahore</p>
+        <p>Motivated Developer | Quick Learner | Problem Solver</p>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <h3>Education</h3>
+            <p><strong>BS Computer Science:</strong> Currently in 1st Semester at University of Engineering and Technology (UET), Lahore.</p>
+            <p><strong>FSc/ICS:</strong> Completed at Punjab Group of Colleges, Lahore Main Campus.</p>
+            <br>
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">C / C++</div>
+                <div class="skill-item">HTML / CSS</div>
+                <div class="skill-item">Algorithms</div>
+            </div>
+            <br>
+            <h3>Strengths</h3>
+            <p>Analytical Logic, Fast Learning, Teamwork, and Effective Communication.</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS / SERVICES SECTION -->
+    <section id="projects">
+        <h2>Projects & Features</h2>
+        <div class="card">
+            <h3>Hotel Management System</h3>
+            <p>A comprehensive application developed during the 1st semester to manage hotel operations including room bookings, guest records, and automated billing processes.</p>
+            <br>
+            <ul>
+                <li>Guest Registration System</li>
+                <li>Room Availability Tracking</li>
+                <li>Secure Database Management (Theoretical)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p><strong>Address:</strong> Muslim Town, Lahore, Pakistan</p>
+            <p><strong>Email:</strong> yameen.ch66e@gmail.com</p>
+            <p><strong>Phone:</strong> +92 305 4917120</p>
+            <br>
+            <form>
+                <input type="text" placeholder="Your Full Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <textarea rows="5" placeholder="Your Message for me..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Yameen | UET Lahore</p>
+    </footer>
+
+</body>
+</html>
+
